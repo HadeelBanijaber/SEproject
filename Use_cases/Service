@@ -1,0 +1,13 @@
+Feature: show Sevice
+You can show our service
+
+Scenario: show service successfully
+Given  user is login
+When show service
+Then printf Service
+
+
+Scenario: not succeed  user not login
+Given  user is logout
+When show service
+Then  printf "cant because user logout" 
