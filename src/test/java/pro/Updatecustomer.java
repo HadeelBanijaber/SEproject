@@ -41,7 +41,7 @@ public class Updatecustomer{
 	}
 	@When("update city")
 	public void update_city() {
-	    cust.updateAmountCompany(cust,"20" );
+	    cust.updateAmountCompany(cust );
 	}
 	
 	@Given("admin is not loggin")
