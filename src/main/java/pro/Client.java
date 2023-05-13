@@ -1,6 +1,7 @@
 package pro;
 
 import java.util.ArrayList;
+import java.util.List;
 
 import pro.Client;
 
@@ -9,10 +10,10 @@ import pro.Client;
 public class Client extends User 
 {
 	
-	public static ArrayList<Client> clients = new ArrayList<Client>();
+	public static ArrayList<Client> Clients = new ArrayList<Client>();
 	protected boolean isAdded;
 
-	public ArrayList<String> meals = new ArrayList<String>();
+	public List <String> Prodects = new ArrayList<String>();
 
 	public Client() {
 		isAdded = false;
@@ -36,9 +37,9 @@ public class Client extends User
 
 		if (admin.isLogged())
 		{
-			ArrayList<String> result = this.search(name);
+			List<String> result = this.search(name);
 
-			if (result.isEmpty() && clients.add(this))
+			if (result.isEmpty() && Clients.add(this))
 				isAdded = true;
 			else
 				GFG.print("the id is already exists");
@@ -54,11 +55,11 @@ public class Client extends User
 	}
 	
 
-	public ArrayList<String> search(String id) 
+	public List<String> search(String id) 
 	{
-		ArrayList<String> result = new ArrayList<String>();
-		for (int i = 0; i < clients.size(); i++) {
-			Client c = clients.get(i);
+		List<String> result = new ArrayList<String>();
+		for (int i = 0; i < Clients.size(); i++) {
+			Client c = Clients.get(i);
 
 			if (c.get("id").indexOf(id) != -1)
 				result.add(c.get("name"));

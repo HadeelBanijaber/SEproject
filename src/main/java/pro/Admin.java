@@ -2,7 +2,6 @@ package pro;
 
 
 
-import pro.User;
 
 public class Admin extends User {
 	
