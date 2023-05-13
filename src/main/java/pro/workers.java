@@ -78,8 +78,8 @@ public class workers {
 				doc.add(password);
 				doc.add(city);
 				doc.add(bill);
-				System.out.print("The worker with these informations added");
-				System.out.print("|  "+did+PRINT+name+PRINT+specialty+PRINT+phone+PRINT+password+PRINT+city+PRINT+bill+PRINT);
+				GFG.print ("The worker with these informations added");
+				GFG.print(PRINT);
 			
 			}
 		

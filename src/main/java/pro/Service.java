@@ -12,7 +12,7 @@ import java.util.ArrayList;
 public class Service 
 {
 	
-	protected static ArrayList<String[]> Service;
+	protected static ArrayList<String[]> Services;
 	protected String name;
 	protected String description;
 	protected String costofservice;
@@ -39,7 +39,7 @@ public class Service
 		if ( admin.isLogged() )
 		{
 			String [] services = { this.name , this.description , this.costofservice};
-			if ( Service.add(services) )
+			if ( Services.add(services) )
 				isAdded = true;
 		}
 		
