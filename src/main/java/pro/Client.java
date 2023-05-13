@@ -10,10 +10,10 @@ import pro.Client;
 public class Client extends User 
 {
 	
-	public static ArrayList<Client> Clients = new ArrayList<Client>();
+	public static List<Client> clients = new ArrayList<Client>();
 	protected boolean isAdded;
 
-	public List <String> Prodects = new ArrayList<String>();
+	public List <String> prodects = new ArrayList<String>();
 
 	public Client() {
 		isAdded = false;
@@ -39,7 +39,7 @@ public class Client extends User
 		{
 			List<String> result = this.search(name);
 
-			if (result.isEmpty() && Clients.add(this))
+			if (result.isEmpty() && clients.add(this))
 				isAdded = true;
 			else
 				GFG.print("the id is already exists");
@@ -58,8 +58,8 @@ public class Client extends User
 	public List<String> search(String id) 
 	{
 		List<String> result = new ArrayList<String>();
-		for (int i = 0; i < Clients.size(); i++) {
-			Client c = Clients.get(i);
+		for (int i = 0; i < clients.size(); i++) {
+			Client c = clients.get(i);
 
 			if (c.get("id").indexOf(id) != -1)
 				result.add(c.get("name"));

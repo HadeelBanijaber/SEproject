@@ -13,7 +13,7 @@ public class Product
 {
 	
 
-	protected static ArrayList<String[]> Prodects;
+	protected static ArrayList<String[]> prodects;
 	protected String name;
 	protected String id;
 	protected String size;
@@ -59,7 +59,7 @@ public class Product
 		if ( admin.isLogged() )
 		{
 			String [] prodects = { this.id , this.name , this.size , };
-			if ( Product.Prodects.add(prodects) )
+			if ( Product.prodects.add(prodects) )
 				isAdded = true;
 		}
 		else
@@ -135,7 +135,7 @@ public List<String> search(String text) {
 	List<String> result = new ArrayList<String>();
 	
 	
-	for (int i = 0; i < Prodects.size(); i++)
+	for (int i = 0; i < prodects.size(); i++)
 	{
 		
        

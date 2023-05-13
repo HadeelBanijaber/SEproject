@@ -27,16 +27,16 @@ public class Worker{
 		this.isupdate=false;
 	}
 	
-	  private List<Worker> Workers= new ArrayList<Worker>();
+	  private List<Worker> workers= new ArrayList<Worker>();
 	  
 	  public void addcustomer(Worker w) {
-		  Workers.add(w);
+		  workers.add(w);
 		  isaddthecust =true;
 		 
 	  }
 	  
 	  public void deletecustomer(Worker w) {
-		  Workers.remove(w);
+		  workers.remove(w);
 		  isaddthecust =false;
 		 
 	  }

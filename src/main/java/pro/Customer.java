@@ -28,16 +28,16 @@ public class Customer{
 		this.isupdate=false;
 	}
 	
-	  private List<Customer> Customers= new ArrayList<Customer>();
+	  private List<Customer> customers= new ArrayList<Customer>();
 	  
 	  public void addcustomer(Customer c) {
-		  Customers.add(c);
+		  customers.add(c);
 		  isaddthecust =true;
 		 
 	  }
 	  
 	  public void deletecustomer(Customer c) {
-		  Customers.remove(c);
+		  customers.remove(c);
 		  isaddthecust =false;
 		 
 	  }
